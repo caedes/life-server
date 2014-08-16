@@ -13,3 +13,5 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'turbolinks'
 
 gem 'spring',        group: :development
+
+gem 'rails_12factor', group: :production
