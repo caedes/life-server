@@ -8,6 +8,7 @@ gem 'pg'
 
 gem 'rails_admin', '~> 0.6.2'
 gem 'devise', '~> 3.3.0'
+gem 'rabl', '~> 0.11.0'
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
