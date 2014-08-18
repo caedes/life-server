@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Set up Ruby dependencies
+bundle install
+echo ''
+
+# Set up database
+rake db:create db:migrate
+echo ''
+rake db:seed
+echo ''
+
+# Install Pow:
+if [ ! -d ~/Library/Application\ Support/Pow ]; then
+  curl get.pow.cx | sh
+fi
+
+# Set up DNS through Pow
+echo 5000 > ~/.pow/`basename $PWD`
